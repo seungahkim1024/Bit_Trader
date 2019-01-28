@@ -2,4 +2,4 @@
     pageEncoding="UTF-8"%>
 <div id="header">
 			<h1>비트 쇼핑몰</h1>
-		</div>
+</div>

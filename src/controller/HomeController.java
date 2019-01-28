@@ -20,10 +20,9 @@ public class HomeController extends HttpServlet {
 		System.out.println("=====홈 컨트롤러!!!!");
 		
 		HttpSession session = request.getSession();
-		session.setAttribute("context", request.getContextPath());
-		System.out.println(request.getContextPath());
-		//String a = request.getContextPath();
-		//System.out.println(a);
+		session.setAttribute("ctx", request.getContextPath());
+		session.setAttribute("css", session.getAttribute("ctx")+"/resources/css/");
+		session.setAttribute("js", session.getAttribute("ctx")+"/resources/js/");
 		EmployeeDTO e = (EmployeeDTO)session.getAttribute("admin");
 		if(e==null){
 			request.setAttribute("compo", "pre");

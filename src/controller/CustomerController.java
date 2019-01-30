@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,7 +16,10 @@ public class CustomerController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	CustomerService service = CustomerServiceImpl.getInstance();
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("===== customer컨트롤러!!!");
 		
+		request.getRequestDispatcher("/WEB-INF/view/customer/customer_list.jsp")
+		.forward(request, response);
 	}
 
 }

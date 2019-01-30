@@ -1,16 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ include file = "/WEB-INF/view/home/head.jsp" %>
 <body>
 <table id="wrapper">
 	<tr>
 		<td colspan="2">
-			<%@ include file="/WEB-INF/view/home/header.jsp" %>
+			<%@ include file="/WEB-INF/view/home/top.jsp" %>
 		</td>
 	</tr>
 	<tr>
 		<td colspan="2">
-			<%@ include file="/WEB-INF/view/home/pre-navi-bar.jsp" %>
 		</td>
 	</tr>
 	<tr  style="height: 300px">
@@ -21,7 +19,7 @@
 	</tr>
 	<tr>
 		<td>
-			<%@ include file="/WEB-INF/view/home/footer.jsp" %>
+			<%@ include file="/WEB-INF/view/home/bottom.jsp" %>
 		</td>
 	</tr>
 </table>
